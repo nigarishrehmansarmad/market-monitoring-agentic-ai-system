@@ -1,0 +1,29 @@
+# ── Core agent framework ─────────────────────────────
+langgraph==0.6.7
+langchain==0.3.27
+langchain-community==0.3.27
+
+# ── LLM (Groq API — Llama 3.2) ───────────────────────
+langchain-groq>=0.2.0
+
+# ── Embeddings (RAG tool) ─────────────────────────────
+sentence-transformers==4.1.0
+
+# ── Vector DB / RAG ──────────────────────────────────
+qdrant-client==1.14.2
+
+# ── Memory / caching ─────────────────────────────────
+redis==5.2.1
+
+# ── Data / utilities ─────────────────────────────────
+pandas==2.2.3
+numpy==2.2.5
+python-dotenv==1.1.0
+
+# ── Dashboard ────────────────────────────────────────
+streamlit==1.41.0
+plotly>=5.18.0
+
+# ── API Backend ──────────────────────────────────────
+fastapi==0.115.12
+uvicorn==0.34.2
