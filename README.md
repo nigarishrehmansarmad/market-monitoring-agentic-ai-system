@@ -32,8 +32,9 @@ inventory_agent → customer_agent → security_agent
                     CRITICAL? → emergency_synthesis
                                        ↓
                           supply_agent → pricing_agent → demand_agent
-                                       ↓
-                                  synthesis_node
+                                       └──────────────┐
+                                                      ↓
+                                                 synthesis_node
                                        ↓
                                       END
 ```
@@ -107,7 +108,7 @@ Optional (system works without these due to fallbacks):
 ## Installation
 
 ```bash
-cd /home/runner/work/market-monitoring-agentic-ai-system/market-monitoring-agentic-ai-system
+cd /path/to/market-monitoring-agentic-ai-system
 python -m venv .venv
 source .venv/bin/activate   # On Windows PowerShell: .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
