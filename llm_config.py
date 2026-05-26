@@ -46,6 +46,8 @@ def _setup_cache() -> None:
         r = redis_lib.Redis(
             host=os.getenv("REDIS_HOST", "localhost"),
             port=int(os.getenv("REDIS_PORT", 6379)),
+            password=os.getenv("REDIS_PASSWORD") or None,
+            ssl=bool(os.getenv("REDIS_PASSWORD")),  # Upstash requires SSL
             decode_responses=False,  # RedisCache needs bytes
         )
         r.ping()
