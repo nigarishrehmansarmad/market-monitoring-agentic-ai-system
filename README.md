@@ -1,12 +1,4 @@
----
-title: Monitoring Local Market Agents
-emoji: 🏪
-colorFrom: blue
-colorTo: green
-sdk: docker
-app_port: 7860
-pinned: false
----
+
 
 # Agentic AI Local Market Monitoring System
 
@@ -122,22 +114,7 @@ cd /path/to/market-monitoring-agentic-ai-system
 python -m venv .venv
 source .venv/bin/activate   # On Windows PowerShell: .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-```
 
-Create `.env` in the repository root:
-
-```env
-GROQ_API_KEY=your_groq_key_here
-LLM_MODEL_ID=llama-3.3-70b-versatile
-LLM_MAX_NEW_TOKENS=512
-LLM_CACHE=true
-REDIS_HOST=localhost
-REDIS_PORT=6379
-QDRANT_HOST=localhost
-QDRANT_PORT=6333
-```
-
----
 
 ## Running the system
 
