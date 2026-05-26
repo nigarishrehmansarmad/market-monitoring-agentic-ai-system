@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+charts/
+.llm_cache.db
+*.png
+.git/
+.gitignore
+README.md
+CLAUDE.md
