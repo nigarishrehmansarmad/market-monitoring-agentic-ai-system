@@ -1,3 +1,13 @@
+---
+title: Monitoring Local Market Agents
+emoji: 🏪
+colorFrom: blue
+colorTo: green
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # Agentic AI Local Market Monitoring System
 
 A multi-agent smart city monitoring system that analyzes Karachi bazaar health in near real time using **LangGraph**, **Groq-hosted LLMs**, **RAG**, and a **Streamlit dashboard**.
